@@ -120,3 +120,114 @@
 # c1=Child()
 # c1.show()
 
+  9. Write two classes Cat and Dog, both have a method speak(). Call speak() on both objects in a
+#  loop
+
+# class Cat:
+#     def speak(self):
+#         print("MAU MAU")
+        
+# class Dog:
+#     def speak(self):
+#         print("BOOU BOOU")
+# cat = Cat()
+# dog = Dog()
+     
+# for animal in (cat, dog):
+#     animal.speak()
+
+
+#  12. Use ABC module to create abstract class Shape with method area(). Inherit classes like Circle,
+#  Square and implement area() accordingly.
+
+
+# from abc import ABC,abstractmethod
+
+# class Shape(ABC):
+    
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Circle(Shape):
+#     def area(self,radius):
+#         self.radius=radius
+#         # area = π × r²
+#         area=3.14 * self.radius * self.radius
+#         print("Area of Circle:", area)
+# class Square(Shape):
+#     def area(self,side):
+#         self.side=side
+#         area = side * side
+#         print("Area of Square:", area)
+        
+# c = Circle()
+# c.area(5)
+
+# s = Square()
+# s.area(4)
+
+#  11. Create a class User with class variable user_count. Track how many objects are created using a
+#  class method.
+# class User:
+#     user_count = 0
+
+#     def __init__(self):
+#         User.user_count += 1
+
+#     @classmethod
+#     def total_user(cls):
+#         print("Total user created:", cls.user_count)
+
+# u1 = User()
+# u2 = User()
+# u3 = User()
+
+# User.total_user()
+
+
+# # 10. Create a class TemperatureConverter with static method celsius_to_fahrenheit(c) and
+# #  fahrenheit_to_celsius(f).
+
+# class Temp:
+    
+#     @staticmethod
+#     def celsius_to_fahrenheit(c):
+#         f = (c * 9/5) + 32
+#         print("Fahrenheit:", f)
+
+#     @staticmethod
+#     def fahrenheit_to_celsius(f):
+#         c = (f - 32) * 5/9
+#         print("Celsius:", c)
+
+# c1=Temp()
+# c2=Temp()
+
+# c1.celsius_to_fahrenheit(0)
+# c2.fahrenheit_to_celsius(99)
+    
+    
+# 14. Create a class Product, subclass Electronics and Clothing. Use polymorphism to call a common
+#  method get_discounted_price() differently.
+
+# class Product:
+#     def __init__(self,price):
+#         self.price=price
+        
+#     def get_discounted_price(self):
+#         return self.price
+
+# class Electronics(Product):
+#     def get_discounted_price(self):
+#         return self.price * 0.90  # 10% off
+
+# class Clothing(Product):
+#     def get_discounted_price(self):
+#         return self.price * 0.80  # 20% off
+
+# products = [Electronics(10000), Clothing(2000)]
+
+# for item in products:
+#     print("Discounted Price:", item.get_discounted_price())
+    
