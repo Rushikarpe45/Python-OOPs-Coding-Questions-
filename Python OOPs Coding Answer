@@ -1,0 +1,122 @@
+# 1. Create a class Person with attributes name and age. Add a method to display them.
+
+# class Person:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+        
+#     def display(self):
+#         print(f"name of the student: {self.name} age of the student:{self.age}")
+    
+
+# ob1=Person("Rushi",22)
+# ob1.display()
+
+
+# 2. Write a class Rectangle with length and width. Add a method to calculate area and perimeter.
+
+# class Rectangle:
+#     def __init__(self,length,width):
+#         self.length=length
+#         self.width=width
+    
+#     def calculate(self):
+#         area=self.length * self.width
+#         perimeter=2*(self.length * self.width)
+#         print("area of the Rectange:",area)
+#         print("perimeter of the Rectangle:",perimeter)
+        
+
+# c1=Rectangle(5,5)
+# c1.calculate()
+
+
+# 3. Create a class Student with constructor to initialize name and marks. Add a method to check
+# pass/fail
+
+# class Student:
+#     def __init__(self,name,marks):
+#         self.name=name
+#         self.marks=marks
+    
+#     def check(self):
+#         if self.marks>=35:
+#             print(f"pass of the student:{self.name} marks of the student:{self.marks}")
+            
+#         else:
+#             print(f"fail the student:{self.name} marks of the student{self.marks}")
+                
+# c1=Student("Rushi",34)
+# c1.check()
+# c2=Student("Krishna",36)
+# c2.check()
+
+
+# 4. Create a class Book: initialize title, author, and price. Add a method to display details.
+
+# class Book:
+#     def __init__(self,title,author,price):
+#         self.title=title
+#         self.author=author
+#         self.price=price
+#     def display(self):
+#         print(f"Title Of The Book:{self.title},Author Of The Book:{self.author},Price of the Book:{self.price}")
+        
+# c1=Book("RKCOMPANY","RUSHIKARPE",500)
+# c1.display()
+
+# 5. Create a base class Vehicle with method start(). Inherit a class Car from it with a method drive().
+
+
+# class Vehicle:
+#     def start(self):
+#         print("Start The Vehicle")
+        
+# class Car(Vehicle):
+#     def drive(self):
+#         print("Drive the car")
+        
+# c1=Car()
+# c1.start()
+# c1.drive()
+
+
+# 6. Create class Employee. Manager and Developer inherit from it. Add unique methods for each.
+
+
+# class Employee:
+#     def display(self):
+#         print("Name of the Employee:Rushi")
+
+# class Manager(Employee):
+#     def show_Manager(self):
+#         print("Name of the Manager Mahesh")
+        
+# class Developer(Employee):
+#     def show_Developer(self):
+#         print("Name of the krishna")
+        
+# c1=Employee()
+# c1.display()
+# c2=Manager()
+# c2.show_Manager()
+# c3=Developer()
+# c3.show_Developer()
+
+
+
+
+# 7. Override show() method in child class to show different message than parent class
+
+# class Parent:
+#     def show(self):
+#         print("How to Cover The Syallbus before Exam")
+        
+# class Child(Parent):
+#     def show(self):
+#         print("to show how parent class is child inherti properties of the Parent")
+        
+
+# c1=Child()
+# c1.show()
+
