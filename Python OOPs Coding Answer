@@ -137,6 +137,47 @@
 #     animal.speak()
 
 
+# # 10. Create a class TemperatureConverter with static method celsius_to_fahrenheit(c) and
+# #  fahrenheit_to_celsius(f).
+
+# class Temp:
+    
+#     @staticmethod
+#     def celsius_to_fahrenheit(c):
+#         f = (c * 9/5) + 32
+#         print("Fahrenheit:", f)
+
+#     @staticmethod
+#     def fahrenheit_to_celsius(f):
+#         c = (f - 32) * 5/9
+#         print("Celsius:", c)
+
+# c1=Temp()
+# c2=Temp()
+
+# c1.celsius_to_fahrenheit(0)
+# c2.fahrenheit_to_celsius(99)
+
+
+
+#  11. Create a class User with class variable user_count. Track how many objects are created using a
+#  class method.
+# class User:
+#     user_count = 0
+
+#     def __init__(self):
+#         User.user_count += 1
+
+#     @classmethod
+#     def total_user(cls):
+#         print("Total user created:", cls.user_count)
+
+# u1 = User()
+# u2 = User()
+# u3 = User()
+
+# User.total_user()
+
 #  12. Use ABC module to create abstract class Shape with method area(). Inherit classes like Circle,
 #  Square and implement area() accordingly.
 
@@ -167,45 +208,9 @@
 # s = Square()
 # s.area(4)
 
-#  11. Create a class User with class variable user_count. Track how many objects are created using a
-#  class method.
-# class User:
-#     user_count = 0
-
-#     def __init__(self):
-#         User.user_count += 1
-
-#     @classmethod
-#     def total_user(cls):
-#         print("Total user created:", cls.user_count)
-
-# u1 = User()
-# u2 = User()
-# u3 = User()
-
-# User.total_user()
 
 
-# # 10. Create a class TemperatureConverter with static method celsius_to_fahrenheit(c) and
-# #  fahrenheit_to_celsius(f).
 
-# class Temp:
-    
-#     @staticmethod
-#     def celsius_to_fahrenheit(c):
-#         f = (c * 9/5) + 32
-#         print("Fahrenheit:", f)
-
-#     @staticmethod
-#     def fahrenheit_to_celsius(f):
-#         c = (f - 32) * 5/9
-#         print("Celsius:", c)
-
-# c1=Temp()
-# c2=Temp()
-
-# c1.celsius_to_fahrenheit(0)
-# c2.fahrenheit_to_celsius(99)
     
     
 # 14. Create a class Product, subclass Electronics and Clothing. Use polymorphism to call a common
